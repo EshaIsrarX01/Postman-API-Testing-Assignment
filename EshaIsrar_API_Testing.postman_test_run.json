@@ -1,0 +1,483 @@
+{
+	"id": "d7591eaa-19e5-4bba-a728-87e2bcfe6717",
+	"name": "EshaIsrar_API_Testing",
+	"timestamp": "2025-07-20T16:31:07.088Z",
+	"collection_id": "46904606-19cf117c-d1a2-43e9-a17d-5c51d5f68227",
+	"folder_id": 0,
+	"environment_id": "46904606-07d6e3a3-686d-4ad4-9ebd-7f5369674ad4",
+	"totalPass": 43,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-07-20T16:30:52.600Z",
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "a00dc9de-9cd5-44a3-9a08-1d9dea6faa65",
+			"name": "GET - List Users",
+			"url": "https://reqres.in/api/users",
+			"time": 820,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"User list is not empty": true,
+				"Response is an object": true,
+				"Response has 'data' property": true,
+				"'data' property is an array": true,
+				"Each user object has expected keys": true,
+				"User ID is a number": true,
+				"User email is a string": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"User list is not empty": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is an object": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'data' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"'data' property is an array": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Each user object has expected keys": {
+					"pass": 1,
+					"fail": 0
+				},
+				"User ID is a number": {
+					"pass": 1,
+					"fail": 0
+				},
+				"User email is a string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				820
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"User list is not empty": true,
+					"Response is an object": true,
+					"Response has 'data' property": true,
+					"'data' property is an array": true,
+					"Each user object has expected keys": true,
+					"User ID is a number": true,
+					"User email is a string": true
+				}
+			]
+		},
+		{
+			"id": "9acb84c8-311d-4647-a312-4cd2fbcb5c15",
+			"name": "List Users By Query Params",
+			"url": "https://reqres.in/api/users?page=2",
+			"time": 147,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				147
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "970c6def-9cce-4b13-b985-1de3b7ee50a9",
+			"name": "Creating a new user",
+			"url": "https://reqres.in/api/users",
+			"time": 848,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status is 201": true,
+				"Response contains user ID": true,
+				"Response contains createdAt timestamp": true,
+				"Deliberate Fail Test - Job Mismatch": false
+			},
+			"testPassFailCounts": {
+				"Status is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains user ID": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains createdAt timestamp": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Deliberate Fail Test - Job Mismatch": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				848
+			],
+			"allTests": [
+				{
+					"Status is 201": true,
+					"Response contains user ID": true,
+					"Response contains createdAt timestamp": true,
+					"Deliberate Fail Test - Job Mismatch": false
+				}
+			]
+		},
+		{
+			"id": "8d32fd02-533d-4444-a8aa-9ed126ec5d8c",
+			"name": "Update User",
+			"url": "https://reqres.in/api/users/2",
+			"time": 823,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status is 200 OK": true,
+				"Response is an object": true,
+				"Response has 'name' property": true,
+				"Response has 'job' property": true,
+				"Response has 'updatedAt' property": true,
+				"Name updated to 'Esha Israr'": true,
+				"Job updated to 'SQA Engineer'": true,
+				"updatedAt is a string": true
+			},
+			"testPassFailCounts": {
+				"Status is 200 OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is an object": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'name' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'job' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'updatedAt' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Name updated to 'Esha Israr'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Job updated to 'SQA Engineer'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"updatedAt is a string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				823
+			],
+			"allTests": [
+				{
+					"Status is 200 OK": true,
+					"Response is an object": true,
+					"Response has 'name' property": true,
+					"Response has 'job' property": true,
+					"Response has 'updatedAt' property": true,
+					"Name updated to 'Esha Israr'": true,
+					"Job updated to 'SQA Engineer'": true,
+					"updatedAt is a string": true
+				}
+			]
+		},
+		{
+			"id": "068a1a82-cb26-4796-9832-48f8a510bc13",
+			"name": "Partial Update",
+			"url": "https://reqres.in/api/users/2",
+			"time": 1698,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status is 200 OK": true,
+				"Response is an object": true,
+				"Response has 'job' property": true,
+				"Response has 'updatedAt' property": true,
+				"Job updated using PATCH to 'Lead QA'": true,
+				"updatedAt is a string": true
+			},
+			"testPassFailCounts": {
+				"Status is 200 OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is an object": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'job' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'updatedAt' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Job updated using PATCH to 'Lead QA'": {
+					"pass": 1,
+					"fail": 0
+				},
+				"updatedAt is a string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1698
+			],
+			"allTests": [
+				{
+					"Status is 200 OK": true,
+					"Response is an object": true,
+					"Response has 'job' property": true,
+					"Response has 'updatedAt' property": true,
+					"Job updated using PATCH to 'Lead QA'": true,
+					"updatedAt is a string": true
+				}
+			]
+		},
+		{
+			"id": "97f635d4-9707-4192-88be-47926a66fd0d",
+			"name": "New Request",
+			"url": "https://reqres.in/api/users/2",
+			"time": 382,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status is 204 No Content": true
+			},
+			"testPassFailCounts": {
+				"Status is 204 No Content": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				382
+			],
+			"allTests": [
+				{
+					"Status is 204 No Content": true
+				}
+			]
+		},
+		{
+			"id": "e163689b-6fe0-4596-864e-064e634266c1",
+			"name": "Register User",
+			"url": "https://reqres.in/api/register",
+			"time": 717,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status is 200 OK": true,
+				"Response is an object": true,
+				"Response contains 'id' property": true,
+				"Response contains 'token' property": true,
+				"ID is a number": true,
+				"Token is a string": true,
+				"Token is not empty": true,
+				"Token is saved as a variable": true
+			},
+			"testPassFailCounts": {
+				"Status is 200 OK": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is an object": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains 'id' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response contains 'token' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"ID is a number": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Token is a string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Token is not empty": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Token is saved as a variable": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				717
+			],
+			"allTests": [
+				{
+					"Status is 200 OK": true,
+					"Response is an object": true,
+					"Response contains 'id' property": true,
+					"Response contains 'token' property": true,
+					"ID is a number": true,
+					"Token is a string": true,
+					"Token is not empty": true,
+					"Token is saved as a variable": true
+				}
+			]
+		},
+		{
+			"id": "d46f1e4b-e0ee-4496-b4f3-1369a1c0c108",
+			"name": "Delayed Response with Token",
+			"url": "https://reqres.in/api/users?delay=5",
+			"time": 6827,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response delay test successful (Status 200 OK)": true,
+				"Response is an object": true,
+				"Response has 'data' property": true,
+				"'data' property is an array": true,
+				"User list is not empty": true,
+				"Each user object has expected keys": true,
+				"First user's ID is a number": true,
+				"First user's email is a string": true,
+				"First user's first_name is a string": true
+			},
+			"testPassFailCounts": {
+				"Response delay test successful (Status 200 OK)": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response is an object": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has 'data' property": {
+					"pass": 1,
+					"fail": 0
+				},
+				"'data' property is an array": {
+					"pass": 1,
+					"fail": 0
+				},
+				"User list is not empty": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Each user object has expected keys": {
+					"pass": 1,
+					"fail": 0
+				},
+				"First user's ID is a number": {
+					"pass": 1,
+					"fail": 0
+				},
+				"First user's email is a string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"First user's first_name is a string": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6827
+			],
+			"allTests": [
+				{
+					"Response delay test successful (Status 200 OK)": true,
+					"Response is an object": true,
+					"Response has 'data' property": true,
+					"'data' property is an array": true,
+					"User list is not empty": true,
+					"Each user object has expected keys": true,
+					"First user's ID is a number": true,
+					"First user's email is a string": true,
+					"First user's first_name is a string": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 12262,
+	"collection": {
+		"requests": [
+			{
+				"id": "a00dc9de-9cd5-44a3-9a08-1d9dea6faa65",
+				"method": "GET"
+			},
+			{
+				"id": "9acb84c8-311d-4647-a312-4cd2fbcb5c15",
+				"method": "GET"
+			},
+			{
+				"id": "970c6def-9cce-4b13-b985-1de3b7ee50a9",
+				"method": "POST"
+			},
+			{
+				"id": "8d32fd02-533d-4444-a8aa-9ed126ec5d8c",
+				"method": "PUT"
+			},
+			{
+				"id": "068a1a82-cb26-4796-9832-48f8a510bc13",
+				"method": "PATCH"
+			},
+			{
+				"id": "97f635d4-9707-4192-88be-47926a66fd0d",
+				"method": "DELETE"
+			},
+			{
+				"id": "e163689b-6fe0-4596-864e-064e634266c1",
+				"method": "POST"
+			},
+			{
+				"id": "d46f1e4b-e0ee-4496-b4f3-1369a1c0c108",
+				"method": "GET"
+			}
+		]
+	}
+}

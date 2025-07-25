@@ -1,8 +1,8 @@
 # Postman API Testing Assignment: Comprehensive API Workflow 🚀
 
-**Hello and welcome to my Postman API Testing Portfolio!** This repository contains a Postman Collection meticulously crafted to fulfill the requirements of Assignment No. 1, demonstrating a robust understanding of API testing principles using the Postman Desktop App.
+**Hello and welcome to my Postman API Testing Portfolio!** This repository contains a Postman Collection meticulously crafted to fulfill the requirements of API testing Assignment No. 1, demonstrating a robust understanding of API testing principles using the Postman Desktop App.
 
-*This assignment was diligently completed by Esha Israr.*
+*This assignment was diligently completed by **Esha Israr**.*
 
 ## 🌟 Project Overview
 
